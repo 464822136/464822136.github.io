@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-29T13:10:29.131Z</updated>
+  <updated>2019-05-30T08:09:46.405Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/05/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%86%85%E5%AE%B9/"/>
     <id>http://yoursite.com/2019/05/28/第一篇内容/</id>
     <published>2019-05-28T15:23:07.000Z</published>
-    <updated>2019-05-29T13:10:29.131Z</updated>
+    <updated>2019-05-30T08:09:46.405Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;p&gt;第一个博客，经过三番五次的安装，终于配的像个样子了,使用 git clone 主题连接 放到 themes/主题名 然后把 _config.yml的theme改成下载的主题名    到github下载主题下载完成后解压到themes之后也把 _config.yml
+          &lt;p&gt;第一个博客，经过三番五次的安装，终于配的像个样子了。然后步入正题&lt;/p&gt;
+&lt;p&gt;1、使用 git clone 主题连接 放到 themes/主题名 然后把 _config.yml的theme改成下载的主题名   
         
       
     
