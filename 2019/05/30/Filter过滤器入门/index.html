@@ -4,8 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 我的第一个博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Filter过滤器入门, 我的第一个博客">
+    <meta name="description" content="1、首先实现tomcat的Filter接口，注意是tomcat下的javax.servlet包里的。
+实现Filter一下三个方法
+1234567891011121314151617181920212223// 拦截所有请求@WebFilt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | 我的第一个博客</title>
+    <title>Filter过滤器入门 | 我的第一个博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -257,13 +259,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/464822136/MyImg/master/Picture013.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        Filter过滤器入门
                     </div>
                 </div>
             </div>
@@ -372,12 +374,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Filter-Listener/" target="_blank">
+                                <span class="chip bg-color">Filter&amp;Listener</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/学习/" class="post-category" target="_blank">
+                                学习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -385,7 +400,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-05-28
+                    2019-05-30
                 </div>
 
                 
@@ -401,15 +416,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p>1、首先实现tomcat的Filter接口，注意是tomcat下的javax.servlet包里的。</p>
+<p>实现Filter一下三个方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 拦截所有请求</span></span><br><span class="line"><span class="meta">@WebFilter</span>(<span class="string">"/*"</span>) </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FilterDemo</span> <span class="keyword">implements</span> <span class="title">Filter</span> </span>&#123;	</span><br><span class="line">	<span class="comment">// 过滤器初始化</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(FilterConfig filterConfig)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 拦截方法</span></span><br><span class="line">	 <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(ServletRequest servletRequest, ServletResponse servletResponse, 		FilterChain filterChain)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"拦截到了"</span>);</span><br><span class="line">        <span class="comment">// 放行  这里如果不写下面这一段 过滤器就会把请求的浏览器给拦截。</span></span><br><span class="line">        filterChain.doFilter(servletRequest,servletResponse);</span><br><span class="line">        System.out.println(<span class="string">"我回来了"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">// 服务器关闭后，销毁Filter后执行</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面是通过注解配过滤器还可以使用web.xml的方式进行配置</p>
+<hr>
+<p>这里是web.xml的方式进行配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;filter&gt;</span><br><span class="line">    &lt;filter-name&gt;demo1&lt;/filter&gt;</span><br><span class="line">    &lt;filter-class&gt;拦截类的全限名&lt;/filter-class&gt;</span><br><span class="line">&lt;/filter&gt;</span><br><span class="line">&lt;filter-mapping&gt;</span><br><span class="line">    &lt;filter-name&gt;demo1&lt;/filter-name&gt;</span><br><span class="line">    &lt;!-- 拦截路径 --&gt;</span><br><span class="line">    &lt;url-pattern&gt; /* &lt;/url-pattern&gt;</span><br><span class="line">&lt;/filter-mapping&gt;</span><br></pre></td></tr></table></figure>
+<p>相信看了上面的内容大家应该对过滤器有一点了解了。</p>
+<p>2、下面说一下过滤器执行流程</p>
+<p>如果有发送请求，过滤器拦截打印 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"拦截到了"</span>);</span><br></pre></td></tr></table></figure>
+<p>拦截之后，得先看看过滤器让不让他过去。</p>
+<p>如果让他过去就是下面这段代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filterChain.doFilter(servletRequest,servletResponse);</span><br><span class="line">System.out.println(<span class="string">"我回来了"</span>);</span><br></pre></td></tr></table></figure>
+<p>回去之后响应页面内容</p>
+<p>3、过滤器生命周期</p>
+<p>​    1.init: 服务器启动后，会创建Filter对象，然后调用init方法</p>
+<p>​    2.doFilter:    每一次请求被拦截资源时，会被执行</p>
+<p>​    3.destroy:    服务器关闭，Filter对象销毁，会调用</p>
+<p>4、过滤器配置</p>
+<p>​    1、拦截路径配置：</p>
+<p>​            1.资源路径：    /index.jsp 只有访问jsp资源是，过滤器才会执行</p>
+<p>​            2.拦截目录：/user/* 访问/user下的所有资源时，过滤器才会执行</p>
+<p>​            3.拦截后缀名：*.jsp 拦截所有jsp后缀的资源，过滤器会执行</p>
+<p>​            4.就是上面的那个 /* 啦</p>
+<p>​    2、给用户组配置过滤器:<br>​        Servlet：@WebServlet(“/user/Servlet”)<br>​        Filter：在WebFilter(“/user/*”)</p>
+<p>​    3、配置不同的拦截方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 设置dispatcherTypes属性</span><br><span class="line">		<span class="number">1</span>.REQUEST:默认值。浏览器直接请求资源</span><br><span class="line">		<span class="number">2</span>.FORWARD:转发访问资源</span><br><span class="line">		<span class="number">3</span>.INCLUDE:包含访问资源</span><br><span class="line">		<span class="number">4</span>.ERROR:错误跳转资源</span><br><span class="line">		<span class="number">5</span>.ASYNC:异步访问资源</span><br></pre></td></tr></table></figure>
+<p>xml配置方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;dispatcher&gt; REQUEST &lt;/dispatcher &gt;</span><br></pre></td></tr></table></figure>
+<p>看完了解这个后，应该算是入门了</p>
 
             </div>
             <hr>
@@ -441,9 +478,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《Hello World》
+                    《Filter过滤器入门》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/05/28/hello-world/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/05/30/Filter过滤器入门/" property="cc:attributionName" rel="cc:attributionURL">
                 Lanmu
             </a> is licensed under a
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
@@ -484,7 +521,57 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2019/05/30/Filter过滤器入门/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/464822136/MyImg/master/Picture013.jpg" class="responsive-img" alt="Filter过滤器入门">
+                        
+                        <span class="card-title">Filter过滤器入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            拦截请求的网站，可以过滤或强化
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/学习/" class="post-category" target="_blank">
+                                    学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Filter-Listener/" target="_blank">
+                        <span class="chip bg-color">Filter&amp;Listener</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/05/28/第一篇内容/">
                     <div class="card-image">
@@ -501,9 +588,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -524,44 +611,6 @@
                     </a>
                     
                 </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/05/28/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            Lanmu
-                            
-                        </span>
-                    </div>
-                </div>
-
                 
             </div>
         </div>
