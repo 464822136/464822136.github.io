@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>我的第一个博客</title>
+  <title>Lanmu</title>
   
-  <subtitle>My first web page</subtitle>
+  <subtitle>今天你开电脑了吗</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-30T09:01:02.211Z</updated>
+  <updated>2019-11-24T10:04:11.171Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/05/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%86%85%E5%AE%B9/"/>
     <id>http://yoursite.com/2019/05/28/第一篇内容/</id>
     <published>2019-05-28T15:23:07.000Z</published>
-    <updated>2019-05-30T09:01:02.211Z</updated>
+    <updated>2019-11-24T10:04:11.171Z</updated>
     
     <summary type="html">
     
