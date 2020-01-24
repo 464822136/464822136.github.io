@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-24T10:43:01.380Z</updated>
+  <updated>2020-01-24T11:03:07.161Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringSecurity自定义资源认证</title>
+    <link href="http://yoursite.com/2020/01/24/SpringSecurity%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B5%84%E6%BA%90%E8%AE%A4%E8%AF%81/"/>
+    <id>http://yoursite.com/2020/01/24/SpringSecurity自定义资源认证/</id>
+    <published>2020-01-24T09:48:13.000Z</published>
+    <updated>2020-01-24T11:03:07.161Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;实现自定义资源认证步骤分为两步&lt;/p&gt;
+&lt;p&gt;1.过滤器拦截&lt;/p&gt;
+&lt;p&gt;​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口&lt;br&gt;​   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="SpringSecurity" scheme="http://yoursite.com/tags/SpringSecurity/"/>
+    
+  </entry>
   
   <entry>
     <title>第一篇内容</title>

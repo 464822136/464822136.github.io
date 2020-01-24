@@ -132,6 +132,52 @@
   <div class="row mb-4 mx-auto">
     
     
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/01/24/SpringSecurity自定义资源认证/">
+        <p class="h4 index-header">SpringSecurity自定义资源认证</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">实现自定义资源认证步骤分为两步
+1.过滤器拦截
+​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口​    1.2重写三个方法
+
+​    主要写第一个方法的逻辑就可以实现自定义的资源认证
+​    
+​    方法中的参数就是SpringSecurity封装了HttpServletRequest、HttpServletResponse、FilterChain的    一个类
+​    
+回到上面getAttributes方法
+1.2.1通过Request获取到请求的资源（地址）
+​        获取到请求的地址做什么？
+​        这里这个方法的作用是将请求的资源所需要的权限返回去出去，需要用SpringSecurtiy提供的类封装好，
+​        然后这个资源的需要的权限不一定只是一个所以是一个集合。
+1.2.2通过请求的地址查询出需要的权限封装好并返回集合
+​        下一步就是判断这个请求地址的权限在我们已认证的权限中有没有这个权限
+2.自定义权限决策器
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-24&nbsp;&nbsp;
+        
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/SpringSecurity">SpringSecurity</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
       <div class="col-12 col-md-4 m-auto">
         <a href="/2019/05/28/第一篇内容/" target="_self">
           <img src="/img/1.jpg" srcset="undefined" alt="第一篇内容" class="img-fluid rounded z-depth-3 index-thumbnails">
@@ -197,7 +243,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -206,7 +252,7 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+                 for="local-search-input">keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
