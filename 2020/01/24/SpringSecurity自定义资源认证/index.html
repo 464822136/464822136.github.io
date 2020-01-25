@@ -165,9 +165,9 @@
 <p>​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口<br>​    1.2重写三个方法</p>
 <p>​    <img src="SecurityMetadataSource.png" srcset="undefined" alt></p>
 <p>​    主要写第一个方法的逻辑就可以实现自定义的资源认证</p>
-<p>​    <img src="/img/getAttributesMethod.png" srcset="undefined" alt></p>
+<p>​    <img src="getAttributes.png" srcset="undefined" alt></p>
 <p>​    方法中的参数就是SpringSecurity封装了HttpServletRequest、HttpServletResponse、FilterChain的    一个类</p>
-<p>​    <img src="../../public/img/FilterInvocation.png" srcset="undefined"></p>
+<p>​    <img src="FilterInvocation.png" srcset="undefined" alt></p>
 <p>回到上面getAttributes方法</p>
 <p>1.2.1通过Request获取到请求的资源（地址）</p>
 <p>​        获取到请求的地址做什么？</p>
@@ -177,20 +177,20 @@
 <p>​        下一步就是判断这个请求地址的权限在我们已认证的权限中有没有这个权限</p>
 <p>2.自定义权限决策器</p>
 <p>   SpringSecurity默认的决策器有三个分别是：</p>
-<p>   <img src="../../public/img/defaultDecide.jpg" srcset="undefined"></p>
+<p>​    <img src="defaultDecide.jpg" srcset="undefined" alt></p>
 <p>​    这里的票数应该是指权限的通过次数，比如访问个菜单或者按钮，他们需要三个权限，而登录的用户只有两个    权限那么就会有两票</p>
 <p>​    因为我们是自定义决策器所以实现SpringSecurity提供的接口就好了</p><h4>AccessDecisionManager</h4><p></p>
 <p>   也是三个方法</p>
-<p>​    <img src="../../public/img/AccessDecisionManager.png" srcset="undefined"></p>
+<p>​    <img src="AccessDecisionManager.png" srcset="undefined" alt></p>
 <p>主要写第一个方法的逻辑就好了，下面介绍了该方法的三个参数</p>
 <p>Authentication var1: 封装了一些认证的信息</p>
 <p>Object var2: 目前还没用到</p>
 <p>Collection<configattribute> var3: 这参数是FilterInvocationSecurityMetadataSource 的getAttributes(Object o)返回过来的集合参数，也就是请求的地址所需要的权限用现在自定义决策器来验证该用户是否有权限</configattribute></p>
-<p><img src="../../public/img/decide.png" srcset="undefined"></p>
+<p><img src="decide.png" srcset="undefined" alt></p>
 <p>这里可根据自己的逻辑进行判断</p>
 <p>接下来核心都写好了，但是还没指定用他们</p>
 <p>在自定义类继承<strong>WebSecurityConfigurerAdapter</strong>的configure(HttpSecurity http)的方法中使用他们</p>
-<p><img src="../../public/img/httpConfig.png" srcset="undefined"></p>
+<p><img src="configure.png" srcset="undefined" alt></p>
 <p>以上自定义资源认证来自个人理解，还请大佬们多多指教，不喜勿喷。</p>
 
             <hr>
@@ -218,7 +218,7 @@
     <div class="d-none d-lg-block col-lg-2 toc-container">
       
   <div id="toc">
-    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
     <div id="tocbot"></div>
   </div>
 
@@ -251,7 +251,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -260,7 +260,7 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+                 for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
