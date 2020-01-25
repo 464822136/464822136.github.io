@@ -149,7 +149,7 @@
           <div class="index-text mb-1">实现自定义资源认证步骤分为两步
 1.过滤器拦截
 ​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口​    1.2重写三个方法
-
+​    
 ​    主要写第一个方法的逻辑就可以实现自定义的资源认证
 ​    
 ​    方法中的参数就是SpringSecurity封装了HttpServletRequest、HttpServletResponse、FilterChain的    一个类
@@ -161,8 +161,7 @@
 ​        然后这个资源的需要的权限不一定只是一个所以是一个集合。
 1.2.2通过请求的地址查询出需要的权限封装好并返回集合
 ​        下一步就是判断这个请求地址的权限在我们已认证的权限中有没有这个权限
-2.自定义权限决策器
-</div>
+2.自定义权</div>
         </div>
       </a>
 
@@ -249,7 +248,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -258,7 +257,7 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+                 for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
