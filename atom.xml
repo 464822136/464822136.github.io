@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-25T05:47:03.825Z</updated>
+  <updated>2020-01-25T05:56:16.456Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/01/24/SpringSecurity%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B5%84%E6%BA%90%E8%AE%A4%E8%AF%81/"/>
     <id>http://yoursite.com/2020/01/24/SpringSecurity自定义资源认证/</id>
     <published>2020-01-24T09:48:13.000Z</published>
-    <updated>2020-01-25T05:47:03.825Z</updated>
+    <updated>2020-01-25T05:56:16.456Z</updated>
     
     <summary type="html">
     
@@ -30,8 +30,10 @@
         
         
           &lt;p&gt;实现自定义资源认证步骤分为两步&lt;/p&gt;
-&lt;p&gt;1.过滤器拦截&lt;/p&gt;
-&lt;p&gt;​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口&lt;br&gt;​   
+&lt;h4&gt;1.过滤器拦截&lt;/h4&gt;
+
+&lt;p&gt;​    1.1首先自定义一个类实现SpringSecurity提供的 FilterInvocationSecurityMetadataSource 接口重写三个方法&lt;/p&gt;
+&lt;p&gt;​   
         
       
     
