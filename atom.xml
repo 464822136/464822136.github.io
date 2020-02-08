@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-08T11:45:00.924Z</updated>
+  <updated>2020-02-08T12:10:23.612Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/02/08/Linux%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%86/"/>
     <id>http://yoursite.com/2020/02/08/Linux权限认识/</id>
     <published>2020-02-08T11:08:28.000Z</published>
-    <updated>2020-02-08T11:45:00.924Z</updated>
+    <updated>2020-02-08T12:10:23.612Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,7 @@
       
         
         
-          &lt;h3 id=&quot;1-文件类型&quot;&gt;&lt;a href=&quot;#1-文件类型&quot; class=&quot;headerlink&quot; title=&quot;1.文件类型&quot;&gt;&lt;/a&gt;1.文件类型&lt;/h3&gt;&lt;p&gt;Linux文件类型有四种：&lt;/p&gt;
-&lt;p&gt;普通文件、链接文件、字符文件、目录文件&lt;/p&gt;
-&lt;p&gt;&lt;img
+          &lt;h3 id=&quot;1-文件类型&quot;&gt;&lt;a href=&quot;#1-文件类型&quot; class=&quot;headerlink&quot;
         
       
     
