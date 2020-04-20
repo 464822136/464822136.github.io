@@ -69,6 +69,56 @@
   </entry>
   
   <entry>
+    <title>后端程序员必备知识(Linux)</title>
+    <link href="http://yoursite.com/2019/10/27/%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2019/10/27/后端程序员必备的Linux基础知识/</id>
+    <published>2019-10-26T16:00:00.000Z</published>
+    <updated>2020-04-20T05:52:13.595Z</updated>
+    
+    <summary type="html">
+    
+      Linux因为是开源的,所以具有较高的安全性,现在几乎所有服务器都会安装在Linux上
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>超详细CentOs7下安装redis以及搭建集群(排坑)</title>
+    <link href="http://yoursite.com/2019/10/01/%E8%B6%85%E8%AF%A6%E7%BB%86CentOS7%E4%B8%8B%E5%AE%89%E8%A3%85redis%E4%BB%A5%E5%8F%8A%E6%90%AD%E5%BB%BA%E9%9B%86%E7%BE%A4-%E6%8E%92%E5%9D%91/"/>
+    <id>http://yoursite.com/2019/10/01/超详细CentOS7下安装redis以及搭建集群-排坑/</id>
+    <published>2019-09-30T16:00:00.000Z</published>
+    <updated>2020-04-20T05:52:06.119Z</updated>
+    
+    <summary type="html">
+    
+      本章会带大家手把手在CentOS7环境下搭建Redis,并且带你一一排坑
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>深入了解HashMap容量为什么是2的幂次方</title>
+    <link href="http://yoursite.com/2019/08/28/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3HashMap%E5%AE%B9%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF2%E7%9A%84%E5%B9%82%E6%AC%A1%E6%96%B9/"/>
+    <id>http://yoursite.com/2019/08/28/深入了解HashMap容量为什么是2的幂次方/</id>
+    <published>2019-08-27T16:00:00.000Z</published>
+    <updated>2020-04-20T05:52:07.618Z</updated>
+    
+    <summary type="html">
+    
+      深入解读JDK1.8的HashMap源码
+    
+    </summary>
+    
+      <category term="深入了解Java" scheme="http://yoursite.com/categories/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3Java/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>第一篇内容</title>
     <link href="http://yoursite.com/2019/05/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%86%85%E5%AE%B9/"/>
     <id>http://yoursite.com/2019/05/28/第一篇内容/</id>
